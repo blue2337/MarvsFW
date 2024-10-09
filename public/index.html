@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Force Withdraw</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="form">
+    <div class="input_wrapper">
+      <h1>APL</h1>
+      <label for="">UserId</label>
+      <input id="userId" name="userId" type="text" placeholder="Enter UserId; Ex: 65..........">
+    </div>
+    <div class="input_wrapper">
+      <label for="">Token</label>
+      <input id="token" name="token" type="text" placeholder="Enter token">
+    </div>
+    <div class="input_wrapper">
+      <br/>
+      <select name="base" id="base">
+         <option value="api.7777bar.com" selected>777bar</option>
+         <option value="api.apanalo-mines.com">Apanalo</option>
+         <option value="api.711bet2.com">711bet</option>
+      </select>
+    </div>
+    <button onclick="login()">Check</button>
+    <div class="withdraw_form">
+      <div class="details">
+        <h5>Withdrawable Amount: <span id="wa">0</span></h5>
+        <h5>Account name: <span id="gname">0</span></h5>
+        <h5>Account number: <span id="gnum">0</span></h5>
+        <h5>Method Id: <span id="met_id">0</span></h5>
+      </div>
+      <div class="withdraw">
+        <div class="w_wrap">
+          <label for="">Amount: </label>
+          <input id="amount" name="amount" type="number" placeholder="200" value="0"/>
+      </div>
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

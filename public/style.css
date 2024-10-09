@@ -1,0 +1,65 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: auto;
+  width: 320px;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+input {
+  width: 97%;
+  padding: 5px 3px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 5px 3px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.details {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.withdraw {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.w_wrap {
+  display: flex;
+  gap: 5px;
+}
+
+.withdraw_form {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
